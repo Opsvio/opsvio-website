@@ -82,9 +82,9 @@ function App() {
                   <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64" alt="User" className="w-10 h-10 rounded-full border-2 border-white" />
                   <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=64&h=64" alt="User" className="w-10 h-10 rounded-full border-2 border-white" />
                 </div>
-                <div className="text-sm text-gray-600">
+                {/* <div className="text-sm text-gray-600">
                   <strong>500+</strong> happy customers
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="relative">
