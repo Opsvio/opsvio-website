@@ -1,24 +1,14 @@
 import React from 'react';
 
-export const Logo = ({ className = "" }: { className?: string }) => (
-  <svg 
-    viewBox="0 0 200 60" 
-    className={`h-8 ${className}`}
-    fill="currentColor"
-  >
-    <text
-      x="0"
-      y="35"
-      className="font-bold"
-      style={{ 
-        fontSize: '40px',
-        fontWeight: 'bold',
-        fontFamily: 'system-ui, -apple-system, sans-serif'
-      }}
-    >
-      OPSVIO
-    </text>
-    {/* Simple bold underline that extends about 60% of the width */}
-    <rect x="0" y="45" width="120" height="6" />
-  </svg>
+interface LogoProps {
+  className?: string;
+}
+
+export const Logo: React.FC<LogoProps> = ({ className = "" }) => (
+  <div className={`flex items-center gap-2 ${className}`}>
+    <div className="relative">
+      <span className="text-2xl font-bold">OPSVIO</span>
+      <div className="absolute -bottom-1 left-0 w-3/5 h-1.5 bg-current"></div>
+    </div>
+  </div>
 );
